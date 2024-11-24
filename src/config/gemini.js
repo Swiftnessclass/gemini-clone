@@ -49,19 +49,19 @@ const speak=(text)=>{
   textSpeak.lang="en-US"
   window.speechSynthesis.speak(textSpeak)   
 }
-//const wishMe=()=>{
-//let day=new Date()
-//let hour=day.getHours()
-//if(hour>=0&&hour<12){
-//speak("good morning sir")
-//}else if(hour>=12&&hour<16){
-//speak("good afternoon sir")
-//}else{
-//speak("good evening sir")
-//}
-//}
-//window.addEventListener('load',()=>{
-//wishMe();
-//});
+const wishMe=()=>{
+let day=new Date()
+let hour=day.getHours()
+if(hour>=0&&hour<12){
+speak("good morning sir,how can i help u")
+}else if(hour>=12&&hour<16){
+speak("good afternoon sir,how can i help u")
+}else{
+speak("good evening sir,how can i help u")
+}
+}
+window.addEventListener('load',()=>{
+wishMe();
+});
 
 export default run;
