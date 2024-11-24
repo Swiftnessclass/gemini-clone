@@ -54,8 +54,8 @@ const ContextProvider= (props)=>{
    
 
     let newResponse2=newResponse.split("*").join("<br/>")
-
-   // setResultData(newResponse2)
+  
+   
 
    let newResponseArray=newResponse2.split(" ");
    for(let i=0;i<newResponseArray.length;i++){

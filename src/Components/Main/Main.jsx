@@ -6,6 +6,11 @@ import { Context } from "../../context/Context";
 const Main = () => {
 
   const{onSent,recentPrompt,showResult,loading,resultData,setInput,input}=useContext(Context)
+
+  const cardClick=(prompt)=>{
+          setInput(prompt);
+          onSent(prompt);
+  }
   
   return (
     
@@ -26,20 +31,20 @@ const Main = () => {
             <p>How can i help u</p>
           </div>
           <div className="cards">
-            <div className="card">
+            <div className="card" onClick={()=>cardClick("Suggest some beautiful places")}>
               <p>Suggest some beautiful places</p>
               <img src={assets.compass_icon} alt="" />
             </div>
-            <div className="card">
-              <p>Briefly summarise this concept </p>
+            <div className="card" onClick={()=>cardClick("Briefly summarise react jsx concept ")}>
+              <p>Briefly summarise react jsx concept </p>
               <img src={assets.bulb_icon} alt="" />
             </div>
-            <div className="card">
-              <p> Brainstorm team bonding activities for our work</p>
+            <div className="card" onClick={()=>cardClick(" provide some topics based on mini project")}>
+              <p> provide some topics based on mini project</p>
               <img src={assets.message_icon} alt="" />
             </div>
-            <div className="card">
-              <p>Improve the redability of the following code</p>
+            <div className="card" onClick={()=>cardClick("how can we gain skills")}>
+              <p>how can we gain skills</p>
               <img src={assets.code_icon} alt="" />
             </div>
           </div>
