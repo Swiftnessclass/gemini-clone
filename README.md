@@ -1,5 +1,5 @@
 # React + Vite
-@gemini-clonee-lovat.vercel.app
+demo:https://gemini-clonee-lovat.vercel.app/
 
 <b>Gemini Clone</b>
 
